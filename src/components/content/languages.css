@@ -1,0 +1,35 @@
+.languages{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.languageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.languageCard{
+    background-color: #2C3642;
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.languageCard > img {
+    margin: 0px;
+    width: 125px;
+    min-height: 125px;
+    max-height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.languageCard > h3 {
+    margin: 10px;
+}

@@ -1,0 +1,40 @@
+.courses{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.coursesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.coursesCard{
+    background-color: #2C3642;
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.coursesCard > img {
+    width: 100%;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    object-fit:contain;
+}
+
+.coursesCard > h3 {
+    margin: 5px;
+}
+
+.coursesCard > .bar-holder {
+    margin: 5px;
+}

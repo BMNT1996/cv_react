@@ -1,0 +1,76 @@
+.main {
+    background-color: #E4E4E4;
+    margin: 0px;
+}
+
+.mainTitle {
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.bar-holder {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 20px auto;
+    height:25px;
+}
+
+.bar {
+  background-color: #0480B3;
+  color: #E4E4E4;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-weight: 400;
+  font-weight: bold;
+  height:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-1 {
+    width: 20%;
+}
+.bar-2 {
+    width: 40%;
+}
+.bar-3 {
+    width: 60%;
+}
+.bar-4 {
+    width: 80%;
+}
+.bar-5 {
+    width: 100%;
+}
+
+.bar-14 {
+    width: 70%;
+}
+
+.bar-18 {
+    width: 90%;
+}
+
+.grid{ 
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.skillTitle {
+    margin:0px;
+    align-self: center;
+    color: #000000;
+}
