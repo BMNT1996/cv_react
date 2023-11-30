@@ -3,10 +3,10 @@ import React from 'react'
 
 export default props =>
     <ul className='navBarList'>
-        <li><a href="/profile"><strong>Profile</strong></a></li>
-        <li><a href="/education"><strong>Education</strong></a></li>
-        <li><a href="/experience"><strong>Experience</strong></a></li>
-        <li><a href="/language"><strong>Language</strong></a></li>
-        <li><a href="/skills"><strong>Skills</strong></a></li>
-        <li><a href="/courses"><strong>Courses</strong></a></li>
+        <li><a href="/cv_react/#/profile"><strong>Profile</strong></a></li>
+        <li><a href="/cv_react/#/education"><strong>Education</strong></a></li>
+        <li><a href="/cv_react/#/experience"><strong>Experience</strong></a></li>
+        <li><a href="/cv_react/#/language"><strong>Language</strong></a></li>
+        <li><a href="/cv_react/#/skills"><strong>Skills</strong></a></li>
+        <li><a href="/cv_react/#/courses"><strong>Courses</strong></a></li>
     </ul>
