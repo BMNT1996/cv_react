@@ -1,35 +1,38 @@
-.languages{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.languageContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.languageCard{
+.card{
     background-color: #2C3642;
     border-radius: 15%;
     width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    margin: 10px;
 }
 
-.languageCard > img {
+.card > h3 {
+    margin: 5px;
+    text-align: center;
+}
+
+.card > .bar-holder {
+    margin: 5px;
+}
+
+.semiRoundedImage{
+    width: 100%;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    object-fit:contain;
+}
+
+.roundedImage{
     margin: 0px;
     width: 125px;
     min-height: 125px;
     max-height: 125px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.languageCard > h3 {
-    margin: 10px;
 }
