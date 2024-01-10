@@ -1,6 +1,9 @@
-import './skills.css'
 import React from 'react'
+import './Skills.css'
 
+/**
+ * Component that shows all the Hard and Soft Skills. The skill levels are classified using a bar that goes from 1-5.
+ */
 export default props =>
     <div className='hardSkills'>
         <h2 className='mainTitle'>Hard Skills</h2>

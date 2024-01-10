@@ -1,8 +1,8 @@
 .profilePhoto {
     border-radius: 50%;
     object-fit: auto;
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
     margin-top: 20px;
 }
 
@@ -15,7 +15,7 @@ button{
     font-weight: bold;
     font-size: large;
     text-align: center;
-    width: 175px;
+    width: 20vw;
 }
 
 button:hover {
@@ -58,7 +58,7 @@ br{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .profilePhoto {
         width: 80vw;
         height: 80vw;
@@ -66,6 +66,10 @@ br{
 
     .sideBar{
         min-height: auto;
+    }
+
+    button{
+        width: 80vw;
     }
     
   }

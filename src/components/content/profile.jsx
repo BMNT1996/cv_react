@@ -1,6 +1,9 @@
-import './profile.css'
 import React from 'react'
+import './Profile.css'
 
+/**
+ * Component with a short introdution and a resume of the profile.
+ */
 export default props =>
     <div className='profile'>
         <h2 className='mainTitle'>Profile</h2>

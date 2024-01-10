@@ -1,60 +1,46 @@
 import React, { useEffect, useState } from "react";
-import "./app.css"
 import { HashRouter } from "react-router-dom"
-import SideBar from "../components/template/sideBar.jsx"
-import Title from "../components/template/title.jsx"
-import Main from "../components/template/main.jsx"
-import Footer from "../components/template/footer.jsx"
-import Profile from "../components/content/profile.jsx"
-import Education from "../components/content/education.jsx"
-import Experience from "../components/content/experience.jsx"
-import Languages from "../components/content/languages.jsx"
-import Skills from "../components/content/skills.jsx"
-import Courses from "../components/content/courses.jsx"
+import "./App.css"
 
+import SideBar from "../components/template/SideBar"
+import Title from "../components/template/Title"
+import Main from "../components/template/Main"
+import Footer from "../components/template/Footer"
+import Profile from "../components/content/Profile"
+import Education from "../components/content/Education"
+import Experience from "../components/content/Experience"
+import Languages from "../components/content/Languages"
+import Skills from "../components/content/Skills"
+import Courses from "../components/content/Courses"
+
+/**
+ * App component, it is the root component of the App where all components will be rendered
+ */
 export default props => {
-  const [view, setView] = useState(<div></div>);
   const size = useWindowSize();
-
-  const handleView = () => {
-    if (size.width > 600) {
-      console.log(size.width)
-      setView(<HashRouter>
-        <div className="app" id="mainSubtitle">
-          <SideBar />
-          <Title />
-          <Main className="mainCell" />
-          <Footer />
-        </div>
-      </HashRouter>)
-    } else {
-      setView(<div>
-        <Title />
-        <SideBar />
-        <Profile />
-        <Education />
-        <Experience />
-        <Languages />
-        <Skills />
-        <Courses />
-        <Footer />
-      </div>)
-    }
-  }
+  const widthThreshold = 700
 
   return (
+    /**
+    * Alternative solution to handle the responsiveness in mobile devices.
+    * If the width of the screen is smaller than the threshold it will be rendered the mobile version of the application, otherwise 
+    * it will be rendered the normal version
+    */
     <div>
-      {size.width > 600 && <HashRouter>
-        <div className="app" id="mainSubtitle">
-          <SideBar />
-          <Title />
-          <Main className="mainCell" />
-          <Footer />
-        </div>
-      </HashRouter>
+      {/* Normal version of the application */}
+      {size.width > widthThreshold &&
+        <HashRouter>
+          <div className="app" id="mainSubtitle">
+            <SideBar />
+            <Title />
+            <Main className="mainCell" />
+            <Footer />
+          </div>
+        </HashRouter>
       }
-      {
-        size.width <= 600 && <div>
+      {/* Normal version of the application */}
+      {size.width <= widthThreshold &&
+        <div>
           <Title />
           <SideBar />
           <Profile />

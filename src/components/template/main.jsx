@@ -1,15 +1,18 @@
-import './main.css'
 import React from 'react'
-import NavBar from './navBar.jsx'
 import { Routes, Route } from 'react-router-dom'
+import './Main.css'
 
-import Profile from "../content/profile.jsx"
-import Education from "../content/education.jsx"
-import Experience from "../content/experience.jsx"
-import Languages from "../content/languages.jsx"
-import Skills from "../content/skills.jsx"
-import Courses from "../content/courses.jsx"
+import NavBar from './NavBar'
+import Profile from "../content/Profile"
+import Education from "../content/Education"
+import Experience from "../content/Experience"
+import Languages from "../content/Languages"
+import Skills from "../content/Skills"
+import Courses from "../content/Courses"
 
+/**
+ * Main component, where the content will be showed according to the route
+ */
 export default props =>
     <div>
         <NavBar />

@@ -2,6 +2,9 @@ import React from 'react'
 import CardContainer from './CardContainer'
 import Card from './Card'
 
+/**
+ * Component with the learned languages
+ */
 export default props =>
     <CardContainer title="Languages">
         <Card
@@ -15,5 +18,5 @@ export default props =>
             roundedImage={true}
             mainLine="English"
             bar_value="3"
-            bar_text="C1" />
+            bar_text="B2" />
     </CardContainer>

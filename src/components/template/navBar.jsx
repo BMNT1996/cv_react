@@ -1,6 +1,10 @@
-import './navBar.css'
 import React from 'react'
+import './NavBar.css'
 
+/**
+ * Component with the navigation bar that allow the user to navigate between the diferent components that was specified in the HashRouter
+ * Note: href optimized to use with GH-pages
+ */
 export default props =>
     <ul className='navBarList'>
         <li><a href="/cv_react/#/profile"><strong>Profile</strong></a></li>

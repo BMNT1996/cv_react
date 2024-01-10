@@ -1,32 +1,39 @@
-import './sideBar.css'
 import React from 'react'
+import './SideBar.css'
 import profilePhoto from "../../assets/IMG_3516-2.jpg"
 import { faCakeCandles, faPhone, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+/**
+ * Side bar component with photo, motivation and contact information
+ */
 export default props => {
 
     return (
         <div className='sideBar'>
+            {/* Profile photo */}
             <img src={profilePhoto} className='profilePhoto' />
 
-            <a download="CV_Bruno_Teles.pdf" href="../../assets/CV_Bruno_Teles.pdf">
+            {/* CV Download button */}
+            <a download="CV_Bruno_Teles.pdf" href="https://drive.google.com/file/d/15m2Xx7scb-f4xYfNjSIC3bRBWqgNRR9f/view?usp=sharing" target="_blank">
                 <button>Download CV</button>
             </a>
+            {/* Motivation and contact information */}
             <div className='informationContainer'>
                 <hr />
                 <p>Hello. I'm Bruno.</p>
-                <p>I'm a software developer, more focused on backend, but always open to a new challenge and right now Iḿ focused to learn more about frontend. My personal goal is to become a good full-stack developer. I have a master's degree in Computer Engineering and 4 years of professional experience. I am motivated and always open to news professional challenges.</p>
+                <p>I'm a software developer, more focused on back-end, but always open to a new challenges and right now I'm focused to learn more about front-end. My personal goal is to become a good full-stack developer. I have a master's degree in Computer Engineering and 4 years of professional experience. I am motivated and always open to news professional challenges.</p>
                 <hr />
                 <span><strong><FontAwesomeIcon icon={faCakeCandles} /> 16 November 1996</strong></span>
                 <br />
-                <span><strong><FontAwesomeIcon icon={faPhone} /> +351962684662</strong></span>
+                <span><strong><FontAwesomeIcon icon={faPhone} /> (+351) 962684662</strong></span>
                 <br />
                 <span><strong><FontAwesomeIcon icon={faEnvelope} /> bmnt1996@hotmail.com</strong></span>
                 <br />
                 <span><strong><FontAwesomeIcon icon={faLocationDot} /> Lisboa, Portugal</strong></span>
                 <br />
                 <hr />
+                {/* Social media buttons */}
                 <div className='socialButtons'>
                     <a href="https://www.linkedin.com/in/bruno-teles96" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
